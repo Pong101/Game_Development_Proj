@@ -157,8 +157,8 @@ function love.update(dt)
         -- slightly increasing it, then altering the dy based on the position
         -- at which it collided, then playing a sound effect
         -- When the game starts serving the ball the bgm will start to play    
+            sounds['bgm']:setLooping(true)
             sounds['bgm']:play()
-
         if ball:collides(player1) then
             ball.dx = -ball.dx * 1.03
             ball.x = player1.x + 10
