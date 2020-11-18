@@ -155,7 +155,7 @@ function love.update(dt)
         end
         if ball:collides(AI) then
             ball.dx = -ball.dx * 1.03
-            ball.x = player2.x - 10
+            ball.x = AI.x - 8
 
             -- keep velocity going in the same direction, but randomize it
             if ball.dy < 0 then
