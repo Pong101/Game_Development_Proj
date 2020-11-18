@@ -60,7 +60,7 @@ function love.load()
     -- set up our sound effects; later, we can just index this table and
     -- call each entry's `play` method
     sounds = {
-        ['moan'] = love.audio.newSource('sounds/moan.wav', 'static'),
+        ['critical_hit'] = love.audio.newSource('sounds/critical_hit.mp3', 'static'),
         ['score'] = love.audio.newSource('sounds/score.wav', 'static'),
         ['win_sound'] = love.audio.newSource('sounds/win_sound.mp3', 'static'),
         ['Pekora_BGM'] = love.audio.newSource('sounds/Pekora_BGM.mp3', 'static')
@@ -151,7 +151,7 @@ function love.update(dt)
                 ball.dy = math.random(10, 150)
             end
 
-            sounds['moan']:play()
+            sounds['critical_hit']:play()
         end
         if ball:collides(player2) then
             ball.dx = -ball.dx * 1.03
@@ -164,7 +164,7 @@ function love.update(dt)
                 ball.dy = math.random(10, 150)
             end
 
-            sounds['moan']:play()
+            sounds['critical_hit']:play()
         end
 
         -- detect upper and lower screen boundary collision, playing a sound
