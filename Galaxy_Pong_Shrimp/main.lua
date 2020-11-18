@@ -60,10 +60,10 @@ function love.load()
     -- set up our sound effects; later, we can just index this table and
     -- call each entry's `play` method
     sounds = {
-        ['paddle_hit'] = love.audio.newSource('sounds/paddle_hit.wav', 'static'),
+        ['moan'] = love.audio.newSource('sounds/moan.wav', 'static'),
         ['score'] = love.audio.newSource('sounds/score.wav', 'static'),
-        ['wall_hit'] = love.audio.newSource('sounds/wall_hit.wav', 'static'),
-        ['bgm'] = love.audio.newSource('sounds/bgm.mp3', 'static')
+        ['win_sound'] = love.audio.newSource('sounds/win_sound.mp3', 'static'),
+        ['Pekora_BGM'] = love.audio.newSource('sounds/Pekora_BGM.mp3', 'static')
     
     }
 
@@ -138,8 +138,8 @@ function love.update(dt)
         -- slightly increasing it, then altering the dy based on the position
         -- at which it collided, then playing a sound effect
         -- When the game starts serving the ball the bgm will start to play    
-            sounds['bgm']:setLooping(true)
-            sounds['bgm']:play()
+            sounds['Pekora_BGM']:setLooping(true)
+            sounds['Pekora_BGM']:play()
         if ball:collides(player1) then
             ball.dx = -ball.dx * 1.03
             ball.x = player1.x + 10
@@ -151,7 +151,7 @@ function love.update(dt)
                 ball.dy = math.random(10, 150)
             end
 
-            sounds['paddle_hit']:play()
+            sounds['moan']:play()
         end
         if ball:collides(player2) then
             ball.dx = -ball.dx * 1.03
@@ -164,7 +164,7 @@ function love.update(dt)
                 ball.dy = math.random(10, 150)
             end
 
-            sounds['paddle_hit']:play()
+            sounds['moan']:play()
         end
 
         -- detect upper and lower screen boundary collision, playing a sound
@@ -172,14 +172,14 @@ function love.update(dt)
         if ball.y <= 0 then
             ball.y = 0
             ball.dy = -ball.dy
-            sounds['wall_hit']:play()
+            sounds['score']:play()
         end
 
         -- -4 to account for the ball's size
         if ball.y >= VIRTUAL_HEIGHT - 10 then
             ball.y = VIRTUAL_HEIGHT - 10
             ball.dy = -ball.dy
-            sounds['wall_hit']:play()
+            sounds['score']:play()
         end
 
         -- if we reach the left or right edge of the screen, go back to serve
@@ -204,7 +204,7 @@ function love.update(dt)
         if ball.x > VIRTUAL_WIDTH then
             servingPlayer = 2
             player1Score = player1Score + 1
-            sounds['score']:play()
+            sounds['win_sound']:play()
 
             if player1Score == 10 then
                 winningPlayer = 1
