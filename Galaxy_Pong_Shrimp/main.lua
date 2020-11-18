@@ -80,14 +80,14 @@ function love.load()
     -- initialize our player paddles; make them global so that they can be
     -- detected by other functions and modules
     player1 = PaddleP1(10, 30, 10, 24)
-    player2 = PaddleP2(VIRTUAL_WIDTH - 20, VIRTUAL_HEIGHT - 30, 10, 24)
+    AI = PaddleP2(VIRTUAL_WIDTH - 20, VIRTUAL_HEIGHT - 30, 10, 24)
 
     -- place a ball in the middle of the screen
     ball = Ball(VIRTUAL_WIDTH / 2 - 5, VIRTUAL_HEIGHT / 2 - 5, 10, 10)
 
     -- initialize score variables
     player1Score = 0
-    player2Score = 0
+    AIScore = 0
 
     -- either going to be 1 or 2; whomever is scored on gets to serve the
     -- following turn
@@ -153,7 +153,7 @@ function love.update(dt)
 
             sounds['critical_hit']:play()
         end
-        if ball:collides(player2) then
+        if ball:collides(AI) then
             ball.dx = -ball.dx * 1.03
             ball.x = player2.x - 10
 
@@ -186,13 +186,13 @@ function love.update(dt)
         -- and update the score and serving player
         if ball.x < 0 then
             servingPlayer = 1
-            player2Score = player2Score + 1
+            AIScore = AIScore + 1
             sounds['score']:play()
 
             -- if we've reached a score of 10, the game is over; set the
             -- state to done so we can show the victory message
-            if player2Score == 10 then
-                winningPlayer = 2
+            if AIScore == 10 then
+                winningPlayer = 'AI'
                 gameState = 'done'
             else
                 gameState = 'serve'
@@ -202,7 +202,7 @@ function love.update(dt)
         end
 
         if ball.x > VIRTUAL_WIDTH then
-            servingPlayer = 2
+            servingPlayer = 'AI'
             player1Score = player1Score + 1
             sounds['win_sound']:play()
 
@@ -228,13 +228,11 @@ function love.update(dt)
         player1.dy = 0
     end
 
-    -- player 2
-    if love.keyboard.isDown('up') then
-        player2.dy = -PADDLE_SPEED
-    elseif love.keyboard.isDown('down') then
-        player2.dy = PADDLE_SPEED
+    -- AI player
+    if gameState == 'play' then
+        AI.y = ball.y
     else
-        player2.dy = 0
+        AI.y = VIRTUAL_HEIGHT - 40
     end
 
     -- update our ball based on its DX and DY only if we're in play state;
@@ -244,7 +242,7 @@ function love.update(dt)
     end
 
     player1:update(dt)
-    player2:update(dt)
+    AI:update(dt)
 end
 
 --[[
@@ -274,11 +272,11 @@ function love.keypressed(key)
 
             -- reset scores to 0
             player1Score = 0
-            player2Score = 0
+            AIScore = 0
 
             -- decide serving player as the opposite of who won
             if winningPlayer == 1 then
-                servingPlayer = 2
+                servingPlayer = 'AI'
             else
                 servingPlayer = 1
             end
@@ -328,7 +326,7 @@ function love.draw()
     displayScore()
     
     player1:render()
-    player2:render()
+    AI:render()
     ball:render()
 
     -- display FPS for debugging; simply comment out to remove
@@ -346,7 +344,7 @@ function displayScore()
     love.graphics.setFont(scoreFont)
     love.graphics.print(tostring(player1Score), VIRTUAL_WIDTH / 2 - 50,
         VIRTUAL_HEIGHT / 3)
-    love.graphics.print(tostring(player2Score), VIRTUAL_WIDTH / 2 + 30,
+    love.graphics.print(tostring(AIScore), VIRTUAL_WIDTH / 2 + 30,
         VIRTUAL_HEIGHT / 3)
 end
 
