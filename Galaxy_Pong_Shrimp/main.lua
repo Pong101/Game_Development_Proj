@@ -317,7 +317,13 @@ function love.draw()
         love.graphics.setFont(smallFont)
         love.graphics.printf('Press Enter to restart!', 0, 30, VIRTUAL_WIDTH, 'center')
     end
-
+    -- displays the label of the player on the screen
+    -- for this case, Player 1
+    love.graphics.print("Player 1", VIRTUAL_WIDTH / 2 - 150,
+    VIRTUAL_HEIGHT / 3 - 50 )
+    -- and for this case, AI
+    love.graphics.print("AI", VIRTUAL_WIDTH / 2 + 150,
+    VIRTUAL_HEIGHT / 3 - 50)
     -- show the score before ball is rendered so it can move over the text
     displayScore()
     
