@@ -63,7 +63,7 @@ function love.load()
         ['critical_hit'] = love.audio.newSource('sounds/critical_hit.mp3', 'static'),
         ['score'] = love.audio.newSource('sounds/score.wav', 'static'),
         ['win_sound'] = love.audio.newSource('sounds/win_sound.mp3', 'static'),
-        ['Pekora_BGM'] = love.audio.newSource('sounds/Pekora_BGM.mp3', 'static')
+        ['Pekora_BGM'] = love.audio.newSource('sounds/Korone_BGM.mp3', 'static')
     
     }
 
