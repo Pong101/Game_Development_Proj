@@ -46,7 +46,7 @@ function love.load()
     love.graphics.setDefaultFilter('nearest', 'nearest')
 
     -- set the title of our application window
-    love.window.setTitle('Galaxy Pong')
+    love.window.setTitle('DOGGO PONG')
 
     -- seed the RNG so that calls to random are always random
     math.randomseed(os.time())
@@ -63,7 +63,7 @@ function love.load()
         ['critical_hit'] = love.audio.newSource('sounds/critical_hit.mp3', 'static'),
         ['score'] = love.audio.newSource('sounds/score.wav', 'static'),
         ['win_sound'] = love.audio.newSource('sounds/win_sound.mp3', 'static'),
-        ['Pekora_BGM'] = love.audio.newSource('sounds/Korone_BGM.mp3', 'static')
+        ['Korone_BGM'] = love.audio.newSource('sounds/Korone_BGM.mp3', 'static')
     
     }
 
@@ -83,7 +83,7 @@ function love.load()
     AI = PaddleP2(VIRTUAL_WIDTH - 20, VIRTUAL_HEIGHT - 30, 10, 24)
 
     -- place a ball in the middle of the screen
-    ball = Ball(VIRTUAL_WIDTH / 2 - 5, VIRTUAL_HEIGHT / 2 - 5, 10, 10)
+    ball = Ball(VIRTUAL_WIDTH / 2 - 18, VIRTUAL_HEIGHT / 2 - 5, 10, 10)
 
     -- initialize score variables
     player1Score = 0
@@ -138,8 +138,8 @@ function love.update(dt)
         -- slightly increasing it, then altering the dy based on the position
         -- at which it collided, then playing a sound effect
         -- When the game starts serving the ball the bgm will start to play    
-            sounds['Pekora_BGM']:setLooping(true)
-            sounds['Pekora_BGM']:play()
+            sounds['Korone_BGM']:setLooping(true)
+            sounds['Korone_BGM']:play()
         if ball:collides(player1) then
             ball.dx = -ball.dx * 1.03
             ball.x = player1.x + 10
@@ -297,7 +297,7 @@ function love.draw()
     if gameState == 'start' then
         -- UI messages
         love.graphics.setFont(smallFont)
-        love.graphics.printf('Welcome to Galaxy Pong!', 0, 10, VIRTUAL_WIDTH, 'center')
+        love.graphics.printf('Welcome to Doggo Pong!', 0, 10, VIRTUAL_WIDTH, 'center')
         love.graphics.printf('Press Enter to begin!', 0, 20, VIRTUAL_WIDTH, 'center')
     elseif gameState == 'serve' then
         -- UI messages
