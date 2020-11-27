@@ -50,7 +50,7 @@ end
     on both axes.
 ]]
 function Ball:reset()
-    self.x = VIRTUAL_WIDTH / 2 - 5
+    self.x = VIRTUAL_WIDTH / 2 - 18
     self.y = VIRTUAL_HEIGHT / 2 - 5
     self.dy = math.random(2) == 1 and -100 or 100
     self.dx = math.random(-50, 50)
