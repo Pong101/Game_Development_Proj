@@ -89,6 +89,7 @@ function love.load()
         ['jump'] = love.audio.newSource('jump.wav', 'static'),
         ['explosion'] = love.audio.newSource('explosion.wav', 'static'),
         ['hurt'] = love.audio.newSource('hurt.wav', 'static'),
+        ['pause_unpause'] = love.audio.newSource('pause_unpause.mp3', 'static'),
         ['score'] = love.audio.newSource('score.wav', 'static'),
 
         -- https://freesound.org/people/xsgianni/sounds/388079/
