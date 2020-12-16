@@ -1,44 +1,27 @@
---[[
-    PipePair Class
-
-    Author: Colton Ogden
-    cogden@cs50.harvard.edu
-
-    Used to represent a pair of pipes that stick together as they scroll, providing an opening
-    for the player to jump through in order to score a point.
-]]
-
 PipePair = Class{}
 
--- size of the gap between pipes
-local GAP_HEIGHT
+
+local GAP_HEIGHT = 90
 
 function PipePair:init(y)
-    -- flag to hold whether this pair has been scored (jumped through)
-    self.scored = false
 
-    -- initialize pipes past the end of the screen
-    self.x = VIRTUAL_WIDTH + 32
+    self.x = VIRTUAL_WIDTH +32
 
-    -- y value is for the topmost pipe; gap is a vertical shift of the second lower pipe
     self.y = y
 
-    --Satisfies requirement: Randomize the gap between pipes
-    GAP_HEIGHT = math.random(90, 150)
-
-    -- instantiate two pipes that belong to this pair
     self.pipes = {
-        ['upper'] = Pipe('top', self.y),
-        ['lower'] = Pipe('bottom', self.y + PIPE_HEIGHT + GAP_HEIGHT)
+        ['upper'] = Pipe('top',self.y),
+        ['lower'] = Pipe('bottom',self.y + PIPE_HEIGHT + math.random(GAP_HEIGHT-5, GAP_HEIGHT+30))
+        
     }
 
-    -- whether this pipe pair is ready to be removed from the scene
     self.remove = false
+
+    self.scored = false
 end
 
 function PipePair:update(dt)
-    -- remove the pipe from the scene if it's beyond the left edge of the screen,
-    -- else move it from right to left
+
     if self.x > -PIPE_WIDTH then
         self.x = self.x - PIPE_SPEED * dt
         self.pipes['lower'].x = self.x
@@ -49,7 +32,7 @@ function PipePair:update(dt)
 end
 
 function PipePair:render()
-    for l, pipe in pairs(self.pipes) do
+    for k, pipe in pairs (self.pipes) do
         pipe:render()
     end
 end
