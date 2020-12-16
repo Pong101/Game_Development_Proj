@@ -75,7 +75,7 @@ function love.load()
     math.randomseed(os.time())
 
     -- app window title
-    love.window.setTitle('PEKO Bird')
+    love.window.setTitle('PEKO Fly')
 
     -- initialize our nice-looking retro text fonts
     smallFont = love.graphics.newFont('font.ttf', 8)
