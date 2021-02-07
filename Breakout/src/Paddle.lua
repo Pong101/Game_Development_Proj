@@ -67,6 +67,14 @@ function Paddle:update(dt)
     end
 end
 
+-- Assignment 2:
+-- Resize the paddle 
+function Paddle:resize(newsize) 
+    self.size = newsize
+    self.width = newsize * 32 
+end
+
+
 --[[
     Render the paddle by drawing the main texture, passing in the quad
     that corresponds to the proper skin and size.

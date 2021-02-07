@@ -61,14 +61,16 @@ function love.load()
 
     -- Quads we will generate for all of our textures; Quads allow us
     -- to show only part of a texture and not the entire thing
+    -- Asssignment 2: Added powerup 
     gFrames = {
         ['arrows'] = GenerateQuads(gTextures['arrows'], 24, 24),
         ['paddles'] = GenerateQuadsPaddles(gTextures['main']),
         ['balls'] = GenerateQuadsBalls(gTextures['main']),
         ['bricks'] = GenerateQuadsBricks(gTextures['main']),
-        ['hearts'] = GenerateQuads(gTextures['hearts'], 10, 9)
+        ['hearts'] = GenerateQuads(gTextures['hearts'], 10, 9),
+        ['power'] = GenerateQuadsPowerUps(gTextures['main'])
     }
-    
+ 
     -- initialize our virtual resolution, which will be rendered within our
     -- actual window no matter its dimensions
     push:setupScreen(VIRTUAL_WIDTH, VIRTUAL_HEIGHT, WINDOW_WIDTH, WINDOW_HEIGHT, {
@@ -79,6 +81,7 @@ function love.load()
 
     -- set up our sound effects; later, we can just index this table and
     -- call each entry's `play` method
+    -- Assignment 2: Added powerup sound effect
     gSounds = {
         ['paddle-hit'] = love.audio.newSource('sounds/paddle_hit.wav','static'),
         ['score'] = love.audio.newSource('sounds/score.wav','static'),
@@ -93,8 +96,9 @@ function love.load()
         ['recover'] = love.audio.newSource('sounds/recover.wav','static'),
         ['high-score'] = love.audio.newSource('sounds/high_score.wav','static'),
         ['pause'] = love.audio.newSource('sounds/pause.wav','static'),
-
-        ['music'] = love.audio.newSource('sounds/music.wav','static')
+        ['power'] = love.audio.newSource('sounds/powerup.wav','static'),
+        ['music'] = love.audio.newSource('sounds/music.wav','static'),
+        ['locked'] = love.audio.newSource('sounds/locked.wav','static')
     }
 
     -- the state machine we'll be using to transition between various states
@@ -131,7 +135,7 @@ function love.load()
     -- test for input from within other functions
     love.keyboard.keysPressed = {}
 end
-
+ 
 --[[
     Called whenever we change the dimensions of our window, as by dragging
     out its bottom corner, for example. In this case, we only need to worry
@@ -207,7 +211,7 @@ function love.draw()
     gStateMachine:render()
     
     -- display FPS for debugging; simply comment out to remove
-    displayFPS()
+    -- displayFPS()
     
     push:apply('end')
 end

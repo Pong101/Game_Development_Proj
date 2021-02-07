@@ -26,7 +26,7 @@ function ServeState:enter(params)
     self.level = params.level
     self.recoverPoints = params.recoverPoints
 
-    -- init new ball (random color for fun)
+    -- init new ball 
     self.ball = Ball()
     self.ball.skin = math.random(7)
 end
@@ -39,8 +39,6 @@ function ServeState:update(dt)
 
     if love.keyboard.wasPressed('enter') or love.keyboard.wasPressed('return') then
         -- pass in all important state info to the PlayState
-        
-        
         gStateMachine:change('play', {
             paddle = self.paddle,
             bricks = self.bricks,
