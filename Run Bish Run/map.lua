@@ -8,7 +8,6 @@ local Player = require("player")
 
 function Map:load()
     self.currentLevel = 1
-    self.lastLevel = 2
     
     World = love.physics.newWorld(0, 2000)
     World:setCallbacks(beginContact, endContact)
@@ -37,13 +36,6 @@ function Map:next()
     self.currentLevel = self.currentLevel + 1
     self:init()
     Player:resetPosition()
-    self:ended()
-end
-
-function Map:ended()
-    if self.currentLevel > self.lastLevel then
-     self.resetPosition = false
-    end
 end
 
 function Map:clean()
@@ -58,7 +50,6 @@ function Map:update()
     if Player.x > MapWidth - 16 then
         self:next()
     end
-    self:ended()
 end
 
 function Map:spawnEntities()
