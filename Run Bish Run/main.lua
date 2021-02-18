@@ -14,6 +14,15 @@ function love.load()
     background = love.graphics.newImage("assets/background2.png")
     GUI:load()
     Player:load()
+
+    sounds = {
+        ['jump'] = love.audio.newSource('jump.wav', 'static'),
+        ['music'] = love.audio.newSource('bgm.mp3', 'static')
+    }
+
+    -- kick off music
+    sounds['music']:setLooping(true)
+    sounds['music']:play()
 end
 
 function love.update(dt)

@@ -261,6 +261,7 @@ end
 
 function Player:jump(key)
     if (key == "w" or key == "up") then
+        sounds['jump']:play()
         if self.grounded or self.graceTime > 0 then
             self.yVel = self.jumpAmount
             self.grounded = false
