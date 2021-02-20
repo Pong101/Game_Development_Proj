@@ -1,5 +1,5 @@
 function love.conf(t)
-    t.title = "RUN BISH RUN!"
+    t.title = "Johhny's Adventure at Demon Island"
     t.version = "11.3"
     t.console = true
     t.window.width = 1280
