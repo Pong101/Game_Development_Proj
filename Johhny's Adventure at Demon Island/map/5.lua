@@ -9,7 +9,7 @@ return {
   tilewidth = 16,
   tileheight = 16,
   nextlayerid = 6,
-  nextobjectid = 192,
+  nextobjectid = 235,
   properties = {},
   tilesets = {
     {
@@ -128,7 +128,7 @@ return {
           name = "",
           type = "",
           shape = "rectangle",
-          x = 2,
+          x = 0,
           y = 337.667,
           width = 584,
           height = 30.6667,
@@ -249,58 +249,13 @@ return {
           type = "",
           shape = "rectangle",
           x = 4400,
-          y = 257,
+          y = 254,
           width = 80,
           height = 81,
           rotation = 0,
           visible = true,
           properties = {
-            ["colidable"] = true
-          }
-        },
-        {
-          id = 10,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 4321,
-          y = 176,
-          width = 15,
-          height = 15,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["colidable"] = true
-          }
-        },
-        {
-          id = 11,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 4174.5,
-          y = 208.5,
-          width = 15,
-          height = 15,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["colidable"] = true
-          }
-        },
-        {
-          id = 12,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 4048.5,
-          y = 175.5,
-          width = 15,
-          height = 15,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["colidable"] = true
+            ["collidable"] = true
           }
         },
         {
@@ -315,67 +270,7 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["colidable"] = true
-          }
-        },
-        {
-          id = 15,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 3792,
-          y = 240,
-          width = 32,
-          height = 97,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["colidable"] = true
-          }
-        },
-        {
-          id = 16,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 3505,
-          y = 94,
-          width = 159,
-          height = 34,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["colidable"] = true
-          }
-        },
-        {
-          id = 17,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 3504,
-          y = 207,
-          width = 159,
-          height = 34,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["colidable"] = true
-          }
-        },
-        {
-          id = 18,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 3183,
-          y = 96,
-          width = 159,
-          height = 34,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["colidable"] = true
+            ["collidable"] = true
           }
         },
         {
@@ -390,22 +285,7 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["colidable"] = true
-          }
-        },
-        {
-          id = 20,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 3010,
-          y = 240,
-          width = 32,
-          height = 97,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["colidable"] = true
+            ["collidable"] = true
           }
         },
         {
@@ -420,7 +300,7 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["colidable"] = true
+            ["collidable"] = true
           }
         },
         {
@@ -435,142 +315,7 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["colidable"] = true
-          }
-        },
-        {
-          id = 24,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 2402,
-          y = 192,
-          width = 30,
-          height = 16,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["colidable"] = true
-          }
-        },
-        {
-          id = 26,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 2288,
-          y = 145,
-          width = 30,
-          height = 16,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["colidable"] = true
-          }
-        },
-        {
-          id = 27,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 2515,
-          y = 257,
-          width = 30,
-          height = 16,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["colidable"] = true
-          }
-        },
-        {
-          id = 28,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 2528,
-          y = 274,
-          width = 30,
-          height = 16,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["colidable"] = true
-          }
-        },
-        {
-          id = 29,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 2545,
-          y = 289,
-          width = 30,
-          height = 16,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["colidable"] = true
-          }
-        },
-        {
-          id = 30,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 2560,
-          y = 305,
-          width = 30,
-          height = 16,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["colidable"] = true
-          }
-        },
-        {
-          id = 31,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 2578,
-          y = 321,
-          width = 30,
-          height = 16,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["colidable"] = true
-          }
-        },
-        {
-          id = 32,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 2177,
-          y = 144,
-          width = 30,
-          height = 16,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["colidable"] = true
-          }
-        },
-        {
-          id = 33,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 2081,
-          y = 177,
-          width = 30,
-          height = 16,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["colidable"] = true
+            ["collidable"] = true
           }
         },
         {
@@ -585,22 +330,7 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["colidable"] = true
-          }
-        },
-        {
-          id = 35,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 1840,
-          y = 223,
-          width = 64,
-          height = 115,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["colidable"] = true
+            ["collidable"] = true
           }
         },
         {
@@ -615,52 +345,7 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["colidable"] = true
-          }
-        },
-        {
-          id = 37,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 1361,
-          y = 63,
-          width = 127,
-          height = 34,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["colidable"] = true
-          }
-        },
-        {
-          id = 38,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 1170,
-          y = 112,
-          width = 127,
-          height = 34,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["colidable"] = true
-          }
-        },
-        {
-          id = 39,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 976,
-          y = 176,
-          width = 127,
-          height = 34,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["colidable"] = true
+            ["collidable"] = true
           }
         },
         {
@@ -675,7 +360,7 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["colidable"] = true
+            ["collidable"] = true
           }
         },
         {
@@ -690,22 +375,7 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["colidable"] = true
-          }
-        },
-        {
-          id = 42,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 497,
-          y = 177,
-          width = 16,
-          height = 161,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["colidable"] = true
+            ["collidable"] = true
           }
         },
         {
@@ -715,126 +385,6 @@ return {
           shape = "rectangle",
           x = 498,
           y = 193,
-          width = 30,
-          height = 16,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["colidable"] = true
-          }
-        },
-        {
-          id = 44,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 306,
-          y = 192,
-          width = 30,
-          height = 16,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["colidable"] = true
-          }
-        },
-        {
-          id = 45,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 528,
-          y = 223,
-          width = 30,
-          height = 16,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["colidable"] = true
-          }
-        },
-        {
-          id = 46,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 545,
-          y = 239,
-          width = 30,
-          height = 16,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["colidable"] = true
-          }
-        },
-        {
-          id = 47,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 561,
-          y = 257,
-          width = 30,
-          height = 16,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["colidable"] = true
-          }
-        },
-        {
-          id = 48,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 576,
-          y = 274,
-          width = 30,
-          height = 16,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["colidable"] = true
-          }
-        },
-        {
-          id = 49,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 593,
-          y = 287,
-          width = 30,
-          height = 16,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["colidable"] = true
-          }
-        },
-        {
-          id = 50,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 608,
-          y = 305,
-          width = 30,
-          height = 16,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["colidable"] = true
-          }
-        },
-        {
-          id = 51,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 624,
-          y = 320,
           width = 30,
           height = 16,
           rotation = 0,
@@ -855,127 +405,637 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["colidable"] = true
+            ["collidable"] = true
           }
         },
         {
-          id = 53,
+          id = 192,
           name = "",
           type = "",
           shape = "rectangle",
-          x = 289,
-          y = 208,
+          x = 497,
+          y = 178,
+          width = 16,
+          height = 161,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["collidable"] = true
+          }
+        },
+        {
+          id = 193,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 498,
+          y = 193,
           width = 30,
           height = 16,
           rotation = 0,
           visible = true,
           properties = {
-            ["colidable"] = true
+            ["collidable"] = true
           }
         },
         {
-          id = 54,
+          id = 194,
           name = "",
           type = "",
           shape = "rectangle",
-          x = 274,
-          y = 225,
+          x = 512,
+          y = 206,
           width = 30,
           height = 16,
           rotation = 0,
           visible = true,
           properties = {
-            ["colidable"] = true
+            ["collidable"] = true
           }
         },
         {
-          id = 55,
+          id = 195,
           name = "",
           type = "",
           shape = "rectangle",
-          x = 258,
-          y = 242,
+          x = 529,
+          y = 224,
           width = 30,
           height = 16,
           rotation = 0,
           visible = true,
           properties = {
-            ["colidable"] = true
+            ["collidable"] = true
           }
         },
         {
-          id = 56,
+          id = 196,
           name = "",
           type = "",
           shape = "rectangle",
-          x = 242,
-          y = 255,
+          x = 545,
+          y = 244,
           width = 30,
           height = 16,
           rotation = 0,
           visible = true,
           properties = {
-            ["colidable"] = true
+            ["collidable"] = true
           }
         },
         {
-          id = 57,
+          id = 197,
           name = "",
           type = "",
           shape = "rectangle",
-          x = 226,
-          y = 272,
+          x = 562,
+          y = 260,
           width = 30,
           height = 16,
           rotation = 0,
           visible = true,
           properties = {
-            ["colidable"] = true
+            ["collidable"] = true
           }
         },
         {
-          id = 58,
+          id = 198,
           name = "",
           type = "",
           shape = "rectangle",
-          x = 210,
-          y = 287,
+          x = 579,
+          y = 273,
           width = 30,
           height = 16,
           rotation = 0,
           visible = true,
           properties = {
-            ["colidable"] = true
+            ["collidable"] = true
           }
         },
         {
-          id = 59,
+          id = 199,
           name = "",
           type = "",
           shape = "rectangle",
-          x = 193,
-          y = 304,
+          x = 593,
+          y = 291,
           width = 30,
           height = 16,
           rotation = 0,
           visible = true,
           properties = {
-            ["colidable"] = true
+            ["collidable"] = true
           }
         },
         {
-          id = 60,
+          id = 200,
           name = "",
           type = "",
           shape = "rectangle",
-          x = 177,
+          x = 609,
+          y = 306,
+          width = 30,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["collidable"] = true
+          }
+        },
+        {
+          id = 201,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 626,
           y = 321,
           width = 30,
           height = 16,
           rotation = 0,
           visible = true,
           properties = {
-            ["colidable"] = true
+            ["collidable"] = true
+          }
+        },
+        {
+          id = 202,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 304,
+          y = 194,
+          width = 30,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["collidable"] = true
+          }
+        },
+        {
+          id = 203,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 287,
+          y = 211,
+          width = 30,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["collidable"] = true
+          }
+        },
+        {
+          id = 204,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 273,
+          y = 227,
+          width = 30,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["collidable"] = true
+          }
+        },
+        {
+          id = 205,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 257,
+          y = 242,
+          width = 30,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["collidable"] = true
+          }
+        },
+        {
+          id = 206,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 241,
+          y = 257,
+          width = 30,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["collidable"] = true
+          }
+        },
+        {
+          id = 207,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 225,
+          y = 275,
+          width = 30,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["collidable"] = true
+          }
+        },
+        {
+          id = 208,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 208,
+          y = 290,
+          width = 30,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["collidable"] = true
+          }
+        },
+        {
+          id = 209,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 193,
+          y = 305,
+          width = 30,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["collidable"] = true
+          }
+        },
+        {
+          id = 210,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 178,
+          y = 321,
+          width = 30,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["collidable"] = true
+          }
+        },
+        {
+          id = 211,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = -26.6667,
+          y = 337.667,
+          width = 4583.33,
+          height = 33.3333,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["collidable"] = true
+          }
+        },
+        {
+          id = 212,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = -35,
+          y = -1,
+          width = 39,
+          height = 339,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["collidable"] = true
+          }
+        },
+        {
+          id = 213,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 975,
+          y = 175,
+          width = 127,
+          height = 34,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["collidable"] = true
+          }
+        },
+        {
+          id = 214,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 1168,
+          y = 111,
+          width = 127,
+          height = 34,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["collidable"] = true
+          }
+        },
+        {
+          id = 215,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 1359,
+          y = 64,
+          width = 127,
+          height = 34,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["collidable"] = true
+          }
+        },
+        {
+          id = 216,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 1839,
+          y = 226,
+          width = 64,
+          height = 115,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["collidable"] = true
+          }
+        },
+        {
+          id = 217,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 2081,
+          y = 177,
+          width = 30,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["collidable"] = true
+          }
+        },
+        {
+          id = 218,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 2177,
+          y = 145,
+          width = 30,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["collidable"] = true
+          }
+        },
+        {
+          id = 219,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 2289,
+          y = 143,
+          width = 30,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["collidable"] = true
+          }
+        },
+        {
+          id = 220,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 2401,
+          y = 190,
+          width = 30,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["collidable"] = true
+          }
+        },
+        {
+          id = 221,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 2516,
+          y = 259,
+          width = 30,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["collidable"] = true
+          }
+        },
+        {
+          id = 222,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 2529,
+          y = 272,
+          width = 30,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["collidable"] = true
+          }
+        },
+        {
+          id = 223,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 2545,
+          y = 289,
+          width = 30,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["collidable"] = true
+          }
+        },
+        {
+          id = 224,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 2562,
+          y = 306,
+          width = 30,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["collidable"] = true
+          }
+        },
+        {
+          id = 225,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 2578,
+          y = 318,
+          width = 30,
+          height = 16,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["collidable"] = true
+          }
+        },
+        {
+          id = 226,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 3007,
+          y = 241,
+          width = 32,
+          height = 97,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["collidable"] = true
+          }
+        },
+        {
+          id = 227,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 3185,
+          y = 96,
+          width = 159,
+          height = 34,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["collidable"] = true
+          }
+        },
+        {
+          id = 228,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 3504,
+          y = 95,
+          width = 159,
+          height = 34,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["collidable"] = true
+          }
+        },
+        {
+          id = 229,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 3504,
+          y = 206,
+          width = 159,
+          height = 34,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["collidable"] = true
+          }
+        },
+        {
+          id = 230,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 3790,
+          y = 241,
+          width = 32,
+          height = 97,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["collidable"] = true
+          }
+        },
+        {
+          id = 232,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 4049.5,
+          y = 176.5,
+          width = 15,
+          height = 15,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["collidable"] = true
+          }
+        },
+        {
+          id = 233,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 4175.5,
+          y = 209.5,
+          width = 15,
+          height = 15,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["collidable"] = true
+          }
+        },
+        {
+          id = 234,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 4319.5,
+          y = 177.5,
+          width = 15,
+          height = 15,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["collidable"] = true
           }
         }
       }
