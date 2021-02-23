@@ -119,6 +119,7 @@ function Player:update(dt)
     self:syncPhysics()
     self:move(dt)
     self:applyGravity(dt)
+    self:restart()
 
 end
 
@@ -204,6 +205,13 @@ function Player:move(dt)
         self:applyfriction(dt)
     end
 
+end
+
+function Player:restart()
+    if love.keyboard.isDown("r") then
+        self:resetPosition()
+        self.health.current = self.health.max
+    end
 end
 
 function Player:applyfriction(dt)
