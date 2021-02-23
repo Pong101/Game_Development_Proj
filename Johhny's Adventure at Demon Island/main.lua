@@ -16,10 +16,10 @@ function love.load()
     Player:load()
 
     sounds = {
-        ['jump'] = love.audio.newSource('jump.wav', 'static'),
-        ['music'] = love.audio.newSource('bgm.mp3', 'static'),
-        ['damage'] = love.audio.newSource('damage.mp3', 'static'),
-        ['coins'] = love.audio.newSource('coins.mp3', 'static')
+        ['jump'] = love.audio.newSource('sfx/jump.wav', 'static'),
+        ['music'] = love.audio.newSource('sfx/bgm.mp3', 'static'),
+        ['damage'] = love.audio.newSource('sfx/damage.mp3', 'static'),
+        ['coins'] = love.audio.newSource('sfx/coins.mp3', 'static')
     }
 
     -- kick off music
