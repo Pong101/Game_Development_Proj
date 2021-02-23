@@ -9,7 +9,7 @@ return {
   tilewidth = 16,
   tileheight = 16,
   nextlayerid = 6,
-  nextobjectid = 235,
+  nextobjectid = 236,
   properties = {},
   tilesets = {
     {
@@ -1032,6 +1032,21 @@ return {
           y = 177.5,
           width = 15,
           height = 15,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["collidable"] = true
+          }
+        },
+        {
+          id = 235,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 4462,
+          y = 1,
+          width = 40,
+          height = 252,
           rotation = 0,
           visible = true,
           properties = {
