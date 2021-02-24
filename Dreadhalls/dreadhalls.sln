@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{97EEAE83-B96E-964A-D081-06E0FE078BFB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dreadhalls", "Assembly-CSharp-firstpass.csproj", "{97EEAE83-B96E-964A-D081-06E0FE078BFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{2B7AC8E9-96C7-C529-2A92-C6D0D1E6124D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dreadhalls", "Assembly-CSharp.csproj", "{2B7AC8E9-96C7-C529-2A92-C6D0D1E6124D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor-firstpass", "Assembly-CSharp-Editor-firstpass.csproj", "{6D82665A-2CC4-17F8-158E-6F1CE0FE5179}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dreadhalls", "Assembly-CSharp-Editor-firstpass.csproj", "{6D82665A-2CC4-17F8-158E-6F1CE0FE5179}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
